@@ -1,0 +1,240 @@
+    body{
+        margin: 0 auto;
+        max-width: 1263px;
+        padding: 0; 
+        width: 1263px; 
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background: white;
+    }
+    
+    #header{
+        position: relative;
+        background: black;
+        font-family: verdana;
+        height: 70px; width: 100%;
+        top: 0px;
+        border-bottom: grey 1px solid;
+    }
+
+    #header h1{       
+        margin-left: 100px;
+        float: left;
+        font-size: 30px;
+    }
+
+    #header h1 a{
+         color: white;
+        text-decoration: none;
+    }
+    
+    #menubars ul li{
+        padding: 10px 50px;
+        background: none;
+        display: inline-block;
+        margin-right: -5px;
+    }
+
+    #menubars ul li a:hover{
+        border-bottom: 1px solid white;
+        transition: .1s;
+    }
+    
+    #menubars ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    #menubars{
+        float: right;
+    }
+    
+    #menubars ul{
+        color: white;
+        font-size: 13px;
+    }
+    
+    #home{
+        position: relative;
+        background: black;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        height: 600px; width: 100%;
+    }
+    
+    #homecon .homegreeting{
+        position: absolute;
+        padding: 18px 155px;
+        background: black;
+        margin-top: 200px;
+        margin-left: 10px; 
+        font-size: 55px;
+        font-family: sans-serif;
+        /*-webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+        */       
+    }
+
+    #home #homecon li{
+        color: white;
+        list-style: none;
+        margin-left: 5px;
+    }
+
+    #about{
+        position: relative;
+        background: white;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        height: 600px; width: 100%;
+    }
+    
+    #about #aboutpad{
+        position: absolute;
+        height: 350px; width: 650px;
+        background: white;
+        margin-left: 100px;
+        margin-right: 50px;
+        margin-top: 100px;
+    }
+    
+    #about #aboutpad h1{
+        font-size:60px;
+        font-family: sans-serif;
+    }
+
+    #about #aboutpad p{
+        font-size: 22px;
+        font-family: verdana;
+    }
+
+    #about #aboutpad p1{
+        font-size: 22px;
+        font-family: verdana;
+    }
+
+    #about img{
+        position: absolute;
+        margin-left: 800px;
+        margin-top: 120px;
+        z-index: 1;
+    }
+
+    #aboutcon{
+        position: relative;
+        background: #B3B6B7;
+        -webkit-clip-path: polygon(0 0, 100% 8%, 100% 90%, 0 100%);
+        clip-path: polygon(0 0, 100% 8%, 100% 90%, 0 100%);
+        height: 600px; width: 100%; 
+    }
+
+    #aboutcon #aboutconpad{
+        position: absolute;
+        height: 300px; width: 700px;
+        background: #B3B6B7;
+        margin-left: 300px;
+        margin-top: 200px;
+    }
+
+    #aboutcon #aboutconpad p{
+        font-size: 22px;
+        color: white;
+        font-family: verdana;
+    }
+
+    #aboutcon #aboutconpad p1{
+        font-size: 22px;
+        color: white;
+        font-family: verdana;
+    }
+
+    #contact{
+        position: relative;
+        height: 600px; width: 100%;
+        background: white;
+        border-bottom: 1px solid white;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        height: 500px; width: 100%; 
+        
+    }
+
+    #contactpad{
+        position: absolute;
+        height: 300px; width: 540px;
+        background: white;
+        margin-left: 120px;
+        margin-right: 50px;
+        margin-top: 100px;
+    }
+
+    #contactpad h1{
+        font-size: 45px;
+        font-family: sans-serif;
+    
+    }
+
+    #contactpad h2{
+        font-size: 20px;
+        font-family: verdana;
+    }
+
+    #contactpad h2:hover{
+        color: grey;
+    }
+
+    #contactpad p,p1{
+        font-size: 22px;
+        font-family: verdana;
+    } 
+
+    #contact #contactlogo{
+        margin-left: 640px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(5deg);
+    }
+
+    #contact #contactlogo img{
+        margin-top: 210px;
+    }
+
+    #footer{
+        position: relative;
+        background: black;
+        height: 350px; width: 100%;
+        bottom: 0px;  
+        -webkit-clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 100%);
+    }
+    
+    #footer li{
+        display: inline-block;
+        padding: 10px 20px;
+        background: black;
+        margin-top: 140px;
+        margin-left: 100px;
+    }
+    
+    #footer li a:hover{  
+        border-bottom: 1px solid white;
+    }
+    
+    #footer li a{
+        color: white;
+        text-decoration: none;
+        font-family: verdana;
+    }
+    
+    #footer h2{
+        color: white;
+        font-family: verdana;
+        font-size: 15px;
+        margin-left: 118px;
+        font-weight: 100;
+        margin-top: 50px;
+    }
+    
