@@ -22,8 +22,12 @@
                 float: left;
             }
             #header h1 a{
-                color: white;
+                color: #d5d5d5;
                 font-size: 25px;
+                text-decoration: none;
+            }
+            #header h1 a:hover{
+                color: cadetblue;
             }
             ul.navbar{
                 margin-top: 20px;
@@ -37,10 +41,14 @@
                 font-size: 15px;
                 font-family: verdana;
                 color: white;
+                text-decoration: none;
+            }
+            ul.navbar li a:hover{
+                color: cadetblue;
             }
             #home{
                 height: 700px;
-                background: black;
+                background: #070707;
             }
             #home img-resposive{
                 position: absolute;
@@ -53,7 +61,7 @@
             #home h1{
                 font-family: verdana;
                 font-size: 50px;
-                color: white;
+                color: #d5d5d5;
                 margin-top: 250px;
                 text-align: center;
             }
@@ -81,6 +89,7 @@
                 margin-top: 40px;
                 width: 85%;
                 margin: 0 auto;
+                margin-bottom: 0px;
             }
             .img-responsive{
                 width: 70%;
@@ -89,13 +98,14 @@
             #contact h1{
                 font-family: verdana;
                 font-size: 45px;
-                color: white;
+                color: #d5d5d5;
                 text-align: center;
             }
             .contactlinks{
-                background: black;
+                background: #070707;
                 padding: 10px 10px;
                 height: inherit; 
+                border-radius: 20px 0 0 0;
             }
             #contactme{
                 margin-left: 20px;
@@ -106,10 +116,11 @@
                 margin-bottom: 10px;
             }
             .contactcaption{
-                background: black;
+                background: #070707;
                 padding: 20px 20px;
                 height: 330px;
                 text-align: center;
+                border-radius: 0 0 20px 0;
             }
             #concontact{ 
                 margin-left: 20px;
@@ -118,7 +129,7 @@
                 margin: 0 auto;
             }
             .contactcaption h3{
-                color: white;
+                color: #d5d5d5;
                 margin-top: 20px;
             }
             ul.links{
@@ -130,21 +141,27 @@
                 display: block;
                 margin-top: 20px;
                 padding: 10px 10px;
-                border: 1px solid white;
+                border: 1px solid #d5d5d5;
                 border-radius: 2px;
                 text-align: center;
                 margin-right: 50px;
             }
             ul.links li a{
-                color: white;
+                color: #d5d5d5;
                 font-size: 20px;
                 font-family: verdana;
                 text-decoration: none;
             }
             ul.links li a:hover{
-                color: grey;
+                color: cadetblue;
+            }
+            #backgroundemail{
+                background: #070707;
+                margin-bottom: 0px;
+                margin-top: 50px;
             }
             #email{
+                background: #070707;
                 height: inherit;
                 margin-top: 50px;
                 margin-left: 20px;
@@ -158,22 +175,27 @@
             .conemail h1{
                 text-align: center;
                 font-family: verdana;
+                color: #d5d5d5;
             }
             .conemail label{
                 font-family: verdana;
+                color: #d5d5d5;
             }
             .conemail h5{
                 font-family: verdana;
+                color: #d5d5d5;
+            }
+            .conemail h6{
+                color: #d5d5d5;
             }
             #footer{
                 background: black;
                 height: 80px; width: 100%;
                 bottom: 0px; 
-                margin-top: 50px;
             }
             #footer h5{
                 font-family: verdana;
-                color: white;
+                color: #d5d5d5;
                 text-align: center;
                 margin-top: 20px;
             }
@@ -181,10 +203,10 @@
         <div class="container-fluid" id="header">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-lg-12">
-                    <h1><a href="#header">JD</a></h1>
+                    <h1><a href="#">JD</a></h1>
                     <ul class="navbar">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#email">Contact</a>
                         <li><a href="#aboutsection">About</a></li>
                     </ul>
                 </div>
@@ -196,7 +218,6 @@
                     <div id="homecaption">
                         <h1>JOSHUA EDUARDS DULATRE</h1>
                         <hr>
-                        <h2>Imagine | Build</h2>
                     </div>
                 </div>
             </div>
@@ -236,30 +257,34 @@
                     <div class="col-md-6 col-lg-6 contactcaption">
                         <div id="concontact">
                             <h3>Hello! You can reach me on these websites.</h3> 
-                            <h3>Just follow and connect and you're good to go.</h3>
+                            <h3>Just follow, connect and you're good to go.</h3>
                         </div>   
                     </div>
                 </div>
             </div>
+        <div id="backgroundemail">
         <div class="container-fluid" id="email">
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 conemail">
                     <h1>Shoot me an email?</h1><hr>
-                    <form method="post">
+                    <form method="post" action="mailto:dulatre.joshuaeduards@gmail.com">
                         <div class="form-group">
-                            <label for="formGroupInput">Name</label> <input type="text" class="form-control" id="formGroupInput" placeholder="Enter your Name">
+                            <label>Name</label> <input type="text" class="form-control" placeholder="Enter your Name">
                         </div>
                         <div class="form-group">
-                            <label for="formGroupInput2">Email</label><input type="text" class="form-control" id="formGroupInput2" placeholder="Enter your Email">
-                        </div>
+                            <label>Email</label>
+                            <input type="text" class="form-control" placeholder="Enter your Email">
+                        </div> 
                         <div class="form-group">
-                            <label for="formGroupInput3">Message</label>
-                            <textarea name="comments" id="formGroupInput3" class="form-control" rows="2" placeholder="Compose your Message" required></textarea>
+                            <label>Message</label>
+                            <textarea name="comments" class="form-control" rows="2" placeholder="Compose your Message" required></textarea>
                         </div>
-                        <button type="button" class="btn btn-default">Send</button><h6>This section is in progress, you can manually send your message here if you want, dulatre.joshuaeduards@gmail.com</h6>
+                        <input type="button" class="btn btn-default" value="Send"/>
+                        <h6>This section is in progress, you can manually send your message here if you want, dulatre.joshuaeduards@gmail.com</h6>
                     </form>   
                 </div>
             </div>
+        </div>
         </div>
         <div class="container-fluid" id="footer">
             <div class="row">
