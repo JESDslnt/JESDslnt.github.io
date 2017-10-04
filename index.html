@@ -12,15 +12,15 @@
     <body>
         <style>
             body{
-                background-color: #2F4F4F;
+                background-color: /*#2F4F4F*/#141414;
             }
             /*--------------HEADER*/
             .header{
                 height: 80px;
-                background: #253d3d;
+                background: /*#253d3d*/ black;
                 color: aliceblue;
                 font-family: verdana;
-                z-index: 1;
+                
             }
             .social-links{
                 float: left;
@@ -28,11 +28,12 @@
             }
             .social-links li{
                 display: inline-block;
-                margin-left: 3px;
+                margin-left: 5px;
             }
             .social-links img{
                 height: 30px;
                 width: 30px;
+                margin-top: 5px;
             }
             .menu-links{
                 float: right;
@@ -41,20 +42,24 @@
             }
             .menu-links li{
                 display: inline-block;
-                margin-right: 3px;
+                margin-right: 5px;
             }
             .menu-links li a{
                 color: aliceblue;
                 text-decoration: none;
             }
+            .menu-links li a:hover{
+                color: grey;
+                transition: .5s;
+            }
             /*--------------HOME*/
             .home{
                 height: 600px;
-                background: #2F4F4F;
-    
+                background: /*#2F4F4F*/#141414;
+                box-shadow: 0px 4px 20px 1px black;
             }
             .home-content{
-                background: #2F4F4F;
+                background: /*#2F4F4F*/#141414;
                 margin-top: 100px;
                 border-radius: 15px;
                 box-shadow: 0px 4px 20px 1px black;
@@ -79,7 +84,7 @@
             /*--------------ABOUT*/
             .about{
                 height: 610px;
-                background: #2F4F4F;
+                background: /*#2F4F4F*/#141414;
                 border-radius: 15px 15px 0 0;
                 box-shadow: 0px 4px 20px 1px black;
                 margin-top: -15px;
@@ -100,7 +105,7 @@
             /*--------------WORK*/
             .work{
                 height: 500px;
-                background: #2F4F4F;
+                background: /*#2F4F4F*/#141414;
                 border-radius: 15px 15px 0 0;
                 box-shadow: 0px 4px 20px 1px black;
                 margin-top: -15px;
@@ -116,7 +121,7 @@
             /*--------------CONTACT*/
             .contact{
                 height: 500px;
-                background: #2F4F4F;
+                background: /*#2F4F4F*/#141414;
                 border-radius: 15px 15px 0 0;
                 box-shadow: 0px 4px 20px 1px black;
                 margin-top: -15px;
@@ -126,10 +131,11 @@
             .contact-content{
                 margin-top: 60px;
             }
+            
             /*--------------FOOTER*/
             .footer{
                 height: 150px;
-                background: #253d3d;
+                background: /*#253d3d*/black;
                 color: aliceblue;
             }
             .footer ul li{
@@ -154,15 +160,15 @@
                 <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1" >
                     <nav>
                         <ul class="social-links">
-                            <li><a href="https://www.instagram.com/joshuaeduards/?hl=en"><img src="ig-logo.png"/></a></li>
-                            <li><a href="https://www.linkedin.com/in/joshua-eduards-s-dulatre-aba750137/"><img src="li-logo.png"/></a></li>
-                            <li><a href="https://github.com/JESDslnt"><img src="gh-logo.png"/></a></li>
+                            <li><a href="https://www.instagram.com/joshuaeduards/?hl=en"><img src="ig-logo.png" class="ig"/></a></li>
+                            <li><a href="https://www.linkedin.com/in/joshua-eduards-s-dulatre-aba750137/" class="li"><img src="li-logo.png"/></a></li>
+                            <li><a href="https://github.com/JESDslnt"><img src="gh-logo.png" class="gh"/></a></li>
                         </ul>
                    
                         <ul class="menu-links">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#work">Work</a></li>
+                            <li><a href="#work">Portfolio</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -204,7 +210,7 @@
         <div class="container work" id="work">
             <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center work-content">
                 <div class="row">
-                    <h1 class="text-center">Work</h1>
+                    <h1 class="text-center">Portfolio</h1>
                     <hr/>
                     <div class="col-md-3 col-lg-3 item" data-aos="fade-up">
                         <h3>1</h3>
@@ -243,7 +249,7 @@
                                     <lavel>Message</lavel>
                                     <input type="textarea" placeholder="Compose your message" class="form-control"/>
                                 </div>
-                                    <input type="button" value="Send" style="color: black; width: 80px; border-radius: 5px;"/>
+                                    <input type="button" value="Send" style="color: black; width: 80px; border-radius: 5px;" class="btn"/>
                             </form>
                         </div>
                     </div>
@@ -257,8 +263,8 @@
                         <li><a href="">HTML</a></li> |
                         <li><a href="">CSS</a></li> |
                         <li><a href="">AOS</a></li>
-                        <h5>Copyright 2017</h5>
-                    </ul>    
+                        <h5>&copy; 2017 JoshuaEduardsDulatre</h5>
+                       
                 </div>
         </div>
         
